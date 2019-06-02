@@ -18,8 +18,8 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
-|email|string|null: false, unique: true|
+|name|string|null: false, unique: true, index: true|
+|email|string|null: false|
 |password|string|null: false|
 
 ### Association
@@ -31,7 +31,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false|
+|name|string|null: false,unique: true|
 
 ### Association
 - has_many :messages
@@ -51,7 +51,7 @@ Things you may want to cover:
 - belongs_to :group
 - belongs_to :user
 
-## members table
+## group_users table
 
 |Column|Type|Options|
 |------|----|-------|
