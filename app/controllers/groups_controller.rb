@@ -1,6 +1,5 @@
 class GroupsController < ApplicationController
 
-  # before_action :move_to_index, except: :index
   before_action :set_group, only: [:edit, :update]
 
   def index
@@ -39,8 +38,5 @@ class GroupsController < ApplicationController
   def set_group
     @group = Group.find(params[:id])
   end
-  # def move_to_index
-  #   redirect_to action: :index unless user_signed_in?
-  # end
 
 end
